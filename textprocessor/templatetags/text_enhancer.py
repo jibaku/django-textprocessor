@@ -1,8 +1,11 @@
+from django.template.defaultfilters import stringfilter
 from django import template
 import re
 
 register = template.Library()
 
+@register.filter
+@stringfilter
 def twitter_username(value):
     """Add a link to twitter for the twitter user reference in a string
     
