@@ -9,6 +9,9 @@ setup(
     packages = [
         "textprocessor",
     ],
+    install_requires=[
+        'markdown',
+    ],
     classifiers = [
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
