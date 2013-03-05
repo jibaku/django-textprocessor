@@ -22,8 +22,8 @@ and add the link to the given username on the Twitter.com website::
 markdown_filter
 ---------------
 
-The ``markdown_filter`` filter convert the value passed to the filter and convert
+The ``markdown`` filter convert the value passed to the filter and convert
 it to markdown using the `markdown <https://pypi.python.org/pypi/Markdown>`_
 library::
 
-    {{ content|markdown_filter }}
+    {{ content|markdown }}

@@ -1,15 +1,16 @@
 Welcome to textprocessor's documentation!
 =========================================
 
-Contents:
+The *textprocessor* module is a simple django app that allow the developper to
+easily enhance the content of a string.
 
 .. toctree::
    :maxdepth: 2
 
+   installation
    usage
 
-The *textprocessor* module is a simple django app that allow the developper to
-easily enhance the content of a string.
+
 
 Indices and tables
 ==================
