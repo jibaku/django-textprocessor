@@ -1,9 +1,9 @@
-from django.test import SimpleTestCase
+from unittest import TestCase
 
 from textprocessor.templatetags.text_enhancer import twitter_username
 
 
-class SimpleTest(SimpleTestCase):
+class SimpleTest(TestCase):
 
     def test_twitter_username(self):
         value = "Hello, @ev"
