@@ -1,18 +1,21 @@
-from distutils.core import setup
- 
+from setuptools import setup, find_packages
+
 setup(
-    name = "textprocessor",
-    version = "0.1",
-    author = "Fabien Schwob",
-    license = "BSD",
-    url = "http://github.com/jibaku/django-textprocessor",
-    packages = [
-        "textprocessor",
-    ],
+    name="textprocessor",
+    version="0.1.1",
+    author="Fabien Schwob",
+    license="BSD",
+    url="http://github.com/jibaku/django-textprocessor",
+    description="""
+    Templatetags and filter to process text (string) to enhance link (add
+    link, check typography rules, etc.)
+    """.strip(),
+    packages=find_packages(exclude=[]),
+    include_package_data=True,
     install_requires=[
         'markdown',
     ],
-    classifiers = [
+    classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
